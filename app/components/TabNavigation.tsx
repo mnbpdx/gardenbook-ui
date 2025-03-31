@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { BiChat } from 'react-icons/bi';
 import { PiPlantFill } from 'react-icons/pi';
+import { IoBookOutline } from 'react-icons/io5';
 
 interface TabProps {
   href: string;
@@ -44,6 +45,11 @@ export default function TabNavigation() {
       href: '/myplants', 
       label: 'My Plants', 
       icon: <PiPlantFill size={20} />
+    },
+    { 
+      href: '/encyclopedia', 
+      label: 'Encyclopedia', 
+      icon: <IoBookOutline size={20} />
     }
   ];
   
